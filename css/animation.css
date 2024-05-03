@@ -1,0 +1,25 @@
+.anim_fadeout{
+    animation: anikey-fadeout-none 0.5s linear forwards normal;
+}
+
+@keyframes anikey-fadeout-none{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.anim_fadein{
+    animation: anikey-fadein 0.5s linear forwards normal;
+}
+
+@keyframes anikey-fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

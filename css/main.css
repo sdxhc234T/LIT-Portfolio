@@ -8,7 +8,7 @@
     --color-yerrow: #FAE900;
     --color-red: #BD0031;
     --color-black: #101010;
-    --color-white: #eeeeee;
+    --color-white: #f1f1f1;
     color:var(--color-black);
 }
 .jp-regular{
@@ -62,7 +62,7 @@ p,span{
 
 html{
     font-size: 40px;
-    width: 100vw;
+    width: 100%;
 }
 .content_section{
     width: 100%;
@@ -182,6 +182,99 @@ html{
     box-shadow: none;
     font-size: 0.5rem;
 }
+.content_modal_select{
+    margin: 1rem 0;
+}
+.modal_select_wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.modal_select_item_bg{
+    flex-grow: 4;
+    z-index: 11;
+    position: sticky;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/IMG_1888.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.modal_select_item{
+    cursor: pointer;
+    height:5rem;
+    display: inline;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0,0,0,0.0);
+    color: rgba(0,0,0,0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal_select_item p{
+    margin: 0.5rem;
+    transition: all 0.3s ease-in-out;
+    color: rgba(255,255,255,0);
+}
+.modal_select_item:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.modal_select_item:hover p{
+    color: rgba(255,255,255)
+}
+
+
+footer{
+    width: 100%;
+    display: flex;
+    background-color: var(--color-blue);
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    color: var(--color-white) !important;
+    margin: 0.4rem !important;
+    font-size: 0.4rem;
+}
+
+.loader_wrapper{
+    position:fixed;
+    z-index: 255;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loader_wrapper h1{
+    font-style: italic;
+    color: #fff;
+    margin: 1rem;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+    height: 1rem;
+    aspect-ratio: 6;
+    --c: #FFF0 64%,#FFF 66% 98%,#FFF0 101%;
+    background:
+      radial-gradient(35% 146% at 50% 159%,var(--c)) 0 0,
+      radial-gradient(35% 146% at 50% -59%,var(--c)) 25% 100%;
+    background-size: calc(100%/3) 50%;
+    background-repeat: repeat-x;
+    animation: l1 1s infinite linear;
+  }
+  @keyframes l1{
+    to {background-position: 50% 0,75% 100%}
+  }
+.loader_outer{
+    padding: 2rem 0;
+    border: solid 0.25rem #fff;
+    border-radius: 10rem;
+}
 @media screen and (max-width:1200px){
     .content_box{
         width: 90vw;
@@ -205,6 +298,9 @@ html{
         height: 60%;
     }
     .content_tworow_wrapper{
+        flex-direction: column;
+    }
+    .modal_select_wrapper{
         flex-direction: column;
     }
 }

@@ -3,10 +3,6 @@
     <title>しみはす | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <script src="./assets/fontawesome/fontawesome.js"></script>
-    <script src="./assets/fontawesome/brands.js"></script>
-    <script  src="./assets/fontawesome/solid.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/main.css"/>
     <script>
         (function(d) {
           var config = {
@@ -16,12 +12,43 @@
           },
           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
-      </script>
+    </script>
+    <script defer src="./assets/fontawesome/fontawesome.js"></script>
+    <script defer src="./assets/fontawesome/brands.js"></script>
+    <script defer src="./assets/fontawesome/solid.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/animation.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/modal.css"/>
+
+    <script defer src="./js/UIControl.js"></script>
 </head>
 <body>
+    <div class="loader_wrapper modal_show" id="modal-loader">
+        <h1 class="en-heavy">Loading</h1>
+        <div class="loader_outer">
+            <div class="loader"></div>            
+        </div>
+    </div>
     <header>
         
     </header>
+    <section class="content_section">
+        <div class="content_box">
+        <div class="content_tworow_wrapper">
+                <div class="tworow_item tworow_img">
+                    <div class="heading_with_icon fa-xs heading_back_w" id="sec2Heading">
+                        <i class="fa-solid fa-message"></i>
+                        <h2 class="en-heavy">Heading</h2>
+                    </div>
+                </div>
+                <div class="tworow_item tworow_item_center">
+                    <h1>こんにちは</h1>
+                    <h2>こんにちは</h2>
+                    <h3>heading</h3>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="content_section">
         <div class="content_box">
             <div class="content_wrapper">
@@ -38,60 +65,107 @@
         </div>
     </section>
     <section class="content_section">
-      <div class="content_box">
-          <div class="content_wrapper">
-            <div class="heading_with_icon fa-xs" id="sec2Heading">
-              <i class="fa-solid fa-message"></i>
-              <h2 class="en-heavy">HeadingHeading</h2>
+        <div class="content_box">
+            <div class="content_wrapper">
+                <div class="heading_with_icon fa-xs">
+                  <i class="fa-solid fa-message"></i>
+                  <h2 class="en-heavy">HeadingHeading</h2>
+                </div>
             </div>
-          </div>
-            <div class="card_array">
-              <div class="card_item">
-                <div class="card_bgimg" style="background-image: url(img/IMG_1888.png);"></div>
-                <div class="card_heading">
-                  <h3>カード見出し</h3>
+              <div class="card_array">
+                <div class="card_item">
+                  <div class="card_bgimg" style="background-image: url(img/IMG_1888.png);"></div>
+                  <div class="card_heading">
+                    <h3>カード見出し</h3>
+                  </div>
+                  <p class="card_desc">カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文</p>
                 </div>
-                <p class="card_desc">カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文</p>
+                <div class="card_item">
+                  <div class="card_bgimg" style="background-image: url(img/IMG_1888.png);"></div>
+                  <div class="card_heading">
+                    <h3>カード見出し</h3>
+                  </div>
+                  <p class="card_desc">カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文</p>
+                </div>
+                <div class="card_item">
+                  <div class="card_bgimg" style="background-image: url(img/IMG_1888.png);"></div>
+                  <div class="card_heading">
+                    <h3>カード見出し</h3>
+                  </div>
+                  <p class="card_desc">カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文</p>
+                </div>
+                <div class="card_item">
+                  <div class="card_bgimg" style="background-image: url(img/IMG_1888.png);"></div>
+                  <div class="card_heading">
+                    <h3>カード見出し</h3>
+                  </div>
+                  <p class="card_desc">カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文</p>
+                </div>     
+                <div class="card_item">
+                    <div class="card_bgimg" style="background-image: url(img/IMG_1888.png);"></div>
+                    <div class="card_heading">
+                      <h3>カード見出し</h3>
+                    </div>
+                    <p class="card_desc">カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文</p>
+                  </div>  
+                  <div class="card_item">
+                    <div class="card_bgimg" style="background-image: url(img/IMG_1888.png);"></div>
+                    <div class="card_heading">
+                      <h3>カード見出し</h3>
+                    </div>
+                    <p class="card_desc">カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文</p>
+                  </div>  
+                           
               </div>
-              <div class="card_item">
-                <div class="card_bgimg" style="background-image: url(img/IMG_1888.png);"></div>
-                <div class="card_heading">
-                  <h3>カード見出し</h3>
-                </div>
-                <p class="card_desc">カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文</p>
-              </div>
-              <div class="card_item">
-                <div class="card_bgimg" style="background-image: url(img/IMG_1888.png);"></div>
-                <div class="card_heading">
-                  <h3>カード見出し</h3>
-                </div>
-                <p class="card_desc">カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文</p>
-              </div>
-              <div class="card_item">
-                <div class="card_bgimg" style="background-image: url(img/IMG_1888.png);"></div>
-                <div class="card_heading">
-                  <h3>カード見出し</h3>
-                </div>
-                <p class="card_desc">カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文</p>
-              </div>              
-            </div>
-      </div>
-  </section>
+        </div>
+    </section>
   <section class="content_section">
     <div class="content_box">
-    <div class="content_tworow_wrapper">
-            <div class="tworow_item tworow_img">
-                <div class="heading_with_icon fa-xs heading_back_w" id="sec2Heading">
-                    <i class="fa-solid fa-message"></i>
-                    <h2 class="en-heavy">Heading</h2>
+        <div class="content_wrapper">
+          <div class="heading_with_icon fa-xs">
+            <i class="fa-solid fa-message"></i>
+            <h2 class="en-heavy">Works</h2>
+          </div>
+        </div>
+        <div class="content_modal_select">
+          <div class="modal_select_wrapper">
+            <div class="modal_select_item_bg">
+                <div class="modal_select_item">
+                    <p>Work Name</p>
                 </div>
             </div>
-            <div class="tworow_item tworow_item_center">
-                <h1>こんにちは</h1>
-                <h2>こんにちは</h2>
-                <h3>heading</h3>
+            <div class="modal_select_item_bg">
+                <div class="modal_select_item">
+                    <p>Work Name</p>
+                </div>
             </div>
+            <div class="modal_select_item_bg">
+                <div class="modal_select_item">
+                    <p>Work Name</p>
+                </div>
+            </div>
+          </div>
+          <div class="modal_select_wrapper">
+            <div class="modal_select_item_bg">
+                <div class="modal_select_item">
+                    <p>Work Name</p>
+                </div>
+            </div>
+            <div class="modal_select_item_bg">
+                <div class="modal_select_item">
+                    <p>Work Name</p>
+                </div>
+            </div>
+            <div class="modal_select_item_bg">
+                <div class="modal_select_item">
+                    <p>Work Name</p>
+                </div>
+            </div>
+          </div>
         </div>
     </div>
-  </section>
+</section>
+  <footer>
+    <p class="en-light">2024 Shimizu.D a.k.a Shimihasu</p>
+  </footer>
 </body>

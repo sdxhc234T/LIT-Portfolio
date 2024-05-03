@@ -1,0 +1,8 @@
+.modal_hide{
+    display: none;
+    opacity: 0;
+}
+.modal_show{
+    display: flex;
+    opacity: 1;
+}
