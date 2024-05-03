@@ -4,7 +4,7 @@
     font-family: toppan-bunkyu-gothic-pr6n, serif;
     font-weight: 600;
     font-style: normal;
-    --color-brue: #008DBD;
+    --color-blue: #008DBD;
     --color-yerrow: #FAE900;
     --color-red: #BD0031;
     --color-black: #101010;
@@ -70,20 +70,101 @@ html{
     justify-content: center;
 }
 .content_box{
-    width: 1024px;
+    width: 1080px;
     background-color: var(--color-white);
 }
 .content_wrapper{
     padding: 0.5rem 1rem;
 
 }
+.heading_with_icon{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
 
+.heading_with_icon i{
+    display: inline-block;
+    
+}
+.heading_with_icon h2{
+    margin-left: 0.4rem;
+    display: inline-block;
+}
 
-@media screen and (max-width:1024px) {
+#sec2Heading *{
+    color: var(--color-blue);
+}
+
+.card_array{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+.card_item{
+    flex-shrink: 0;
+    width:300px;
+    height:500px;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    filter:drop-shadow(0 0 20px rgba(0,0,0,0.1));
+    overflow:hidden;
+    margin:0 0 0.5rem 1rem;
+}
+.card_item:last-child{
+    margin-right: 1rem;
+}
+.card_item *{
+    border-radius: 0.5rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.card_bgimg{
+    position:absolute;
+    width: 100%;
+    height: 40%;
+    background-size: cover;
+    z-index: 2;
+}
+.card_heading{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    z-index: 1;
+}
+.card_heading *{
+    box-shadow: none;
+    color: var(--color-white);
+    padding: 0.2rem;
+    font-size: 0.5rem;
+}
+.card_desc{
+    position: absolute;
+    top: 50%;
+    padding: 0.5rem;
+    box-shadow: none;
+
+}
+@media screen and (max-width:1200px){
+    .content_box{
+        width: 80vw;
+    }
+}
+@media screen and (max-width:600px) {
     html{
-        font-size: 25px;
+        font-size: 30px;
     }
     .content_box{
         width: 100%;
+    }
+    .card_item{
+        width: 100%;
+        height: 500px;
     }
 }
