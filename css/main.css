@@ -1,0 +1,89 @@
+:root *{
+    margin: 0;
+    padding: 0;
+    font-family: toppan-bunkyu-gothic-pr6n, serif;
+    font-weight: 600;
+    font-style: normal;
+    --color-brue: #008DBD;
+    --color-yerrow: #FAE900;
+    --color-red: #BD0031;
+    --color-black: #101010;
+    --color-white: #eeeeee;
+    color:var(--color-black);
+}
+.jp-regular{
+    font-family: toppan-bunkyu-gothic-pr6n, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.jp-bold{
+    font-family: toppan-bunkyu-gothic-pr6n, serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.jp-heavy{
+    font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.en-light{
+    font-family: futura-pt, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.en-medium{
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.en-heavy{
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+h1{
+    font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1rem;
+}
+h2,h3,h4{
+    font-family: toppan-bunkyu-gothic-pr6n, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.8rem;
+}
+p,span{
+    font-family: toppan-bunkyu-gothic-pr6n, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.6rem;
+}
+
+html{
+    font-size: 40px;
+    width: 100vw;
+}
+.content_section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.content_box{
+    width: 1024px;
+    background-color: var(--color-white);
+}
+.content_wrapper{
+    padding: 0.5rem 1rem;
+
+}
+
+
+@media screen and (max-width:1024px) {
+    html{
+        font-size: 25px;
+    }
+    .content_box{
+        width: 100%;
+    }
+}
