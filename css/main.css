@@ -41,6 +41,9 @@
     font-weight: 700;
     font-style: normal;
 }
+.color_blue *{
+    color:var(--color-blue);
+}
 h1{
     font-family: toppan-bunkyu-midashi-go-std, sans-serif;
     font-weight: 900;
@@ -62,6 +65,10 @@ p,span{
 
 html{
     font-size: 40px;
+    width: 100%;
+}
+header{
+    height: 100vh;
     width: 100%;
 }
 .content_section{
@@ -113,13 +120,21 @@ html{
 .heading_back_w:before{
     filter: blur(30px);
 }
-.heading_with_icon i{
-    display: inline-block;
-    
-}
 .heading_with_icon h2{
     margin-left: 0.4rem;
     display: inline-block;
+}
+.para_with_icon{
+    display: flex;
+    align-items:center;
+    margin: 0.4rem 0;
+
+}
+
+.para_with_icon p{
+    margin-left: 0.4rem;
+    flex-shrink: 0;
+    height: 100%;
 }
 
 #sec2Heading *{
