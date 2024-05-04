@@ -89,6 +89,7 @@ html{
     font-size: 40px;
     width: 100%;
     scroll-behavior: smooth;
+    overflow-x:hidden;
 }
 header{
     position: relative;
@@ -279,6 +280,7 @@ header{
 .card_heading{
     position: absolute;
     top:0;
+    left:0;
     width: 300px;
     height: 225px;
     text-align: center;
