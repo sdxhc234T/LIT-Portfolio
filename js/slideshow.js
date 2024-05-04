@@ -2,6 +2,8 @@ const images = [
     { "url": "./img/IMG_1888.webp" },
     { "url": "./img/gad_card.webp" },
     { "url": "./img/face_intro.webp" },
+    { "url": "./img/diy_card.webp" },
+    { "url": "./img/2024.webp" },
 ]
 const targetDirID = "slideshow"
 const zoomDuration = 6000;
