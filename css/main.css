@@ -8,6 +8,7 @@
     --color-yerrow: #FAE900;
     --color-red: #BD0031;
     --color-black: #101010;
+    --color-gray: #3a3a3a;
     --color-white: #f1f1f1;
     color:var(--color-black);
 }
@@ -42,7 +43,25 @@
     font-style: normal;
 }
 .color_blue *{
-    color:var(--color-blue);
+    color:var(--color-blue)!important;
+}
+.color_blue_bg{
+    background-color: var(--color-blue)!important;
+}
+.color_red *{
+    color:var(--color-red)!important;
+}
+.color_red_bg{
+    background-color: var(--color-red)!important;
+}
+.color_yellow *{
+    color: var(--color-yerrow)!important;
+}
+.color_yellow_bg{
+    background-color: var(--color-yerrow)!important;
+}
+.color_gray_bg{
+    background-color: var(--color-gray)!important;
 }
 h1{
     font-family: toppan-bunkyu-midashi-go-std, sans-serif;
@@ -75,6 +94,7 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 .content_box{
     width: 1080px;
@@ -90,7 +110,7 @@ header{
     width: 100%;
 }
 .tworow_item{
-    flex-grow: 3;
+    flex-grow: 2;
     padding: 2rem 1rem;
 }
 .tworow_item_center{
@@ -102,9 +122,9 @@ header{
     background-image: url(/img/IMG_1888.png);
     background-size: cover;
     background-position: center;
-    flex-grow: 1;
+    flex-grow: 2;
     padding: 0;
-    height: 10rem;
+    min-height: 10rem;
 }
 .heading_with_icon{
     display: flex;
@@ -134,7 +154,7 @@ header{
 .para_with_icon p{
     margin-left: 0.4rem;
     flex-shrink: 0;
-    height: 100%;
+    width: 100%;
 }
 
 #sec2Heading *{
@@ -145,7 +165,7 @@ header{
     width: 100%;
     display: flex;
     overflow-x: scroll;
-    margin-bottom: 2rem;
+    margin-top:1rem;
 }
 .card_item{
     flex-shrink: 0;
@@ -155,7 +175,7 @@ header{
     border-radius: 0.5rem;
     filter:drop-shadow(0 0 5px rgba(0,0,0,0.1));
     overflow:hidden;
-    margin:0 0 0.5rem 1rem;
+    margin:0 0 2rem 1rem;
 }
 .card_item:last-child{
     margin-right: 1rem;
@@ -198,7 +218,7 @@ header{
     font-size: 0.5rem;
 }
 .content_modal_select{
-    margin: 1rem 0;
+    margin: 1rem 0 0 0 ;
 }
 .modal_select_wrapper{
     display: flex;

@@ -23,3 +23,16 @@
         opacity: 1;
     }
 }
+
+.anim_zoomin{
+    animation: anikey-zoomin 2s ease-in forwards normal;
+}
+
+@keyframes anikey-zoomin{
+    0%{
+        transform:scale(1,1);
+    }
+    100%{
+        transform:scale(1.2,1.2);
+    }
+}
