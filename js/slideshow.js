@@ -1,7 +1,7 @@
 const images = [
-    { "url": "./img/IMG_1888.png" },
-    { "url": "./img/IMG_1888.png" },
-    { "url": "./img/IMG_1888.png" },
+    { "url": "./img/IMG_1888.webp" },
+    { "url": "./img/gad_card.webp" },
+    { "url": "./img/face_intro.webp" },
 ]
 const targetDirID = "slideshow"
 const zoomDuration = 6000;
@@ -11,7 +11,7 @@ const fadeDuration = 1000;
 document.addEventListener("DOMContentLoaded", () => {
     let count = 0;
     const targetDir = document.getElementById(targetDirID);
-    targetDir.style = "width:100%;height:100vh;position:relative;overflow:hidden;z-index:15;"
+    targetDir.style = "width:100%;height:100vh;position:relative;overflow:hidden;"
 
     addAndDeleteSlide();
     setInterval(() => {
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
             easing: "ease-in"
         }
         let slide = document.createElement("div");
-        slide.style = `background-image: url(${image});width: 100vw;height: 100vh;background-size: cover;position: absolute;top:0`;
+        slide.style = `background-image: url(${image});width: 100vw;height: 100vh;background-size: cover;background-position:center;position: absolute;top:0;`;
         slide.id = `slide${id}`
         slide.animate(zoomKeyFrame, zoomTimes)
         slide.animate(fadeKeyFrame,fadeTimes)

@@ -22,6 +22,10 @@ function fadeinElem(id) {
         let target = document.getElementById(id)
         target.classList.remove(uiClass.modal.hide)
         target.classList.add(uiClass.anim.fadein)
+        setTimeout(() => {
+            target.classList.add(uiClass.modal.show)
+            target.classList.remove(uiClass.anim.fadein)
+        }, 510);
     })
 }
 
@@ -29,12 +33,14 @@ function fadeoutElem(id) {
     fireEvent(() => {
         let target = document.getElementById(id)
         target.classList.add(uiClass.anim.fadeout)
-        setInterval(() => {
+        setTimeout(() => {
             target.classList.remove(uiClass.modal.show)
             target.classList.add(uiClass.modal.hide)  
+            target.classList.remove(uiClass.anim.fadeout)
         }, 510);
     })
 }
+
 
 (function () {
     function f() {

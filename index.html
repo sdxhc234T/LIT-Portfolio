@@ -22,6 +22,7 @@
 
     <script defer src="./js/UIControl.js"></script>
     <script defer src="js/slideshow.js"></script>
+    <script defer src="js/modal.js"></script>
 </head>
 <body>
     <div class="loader_wrapper modal_show" id="modal-loader">
@@ -30,51 +31,140 @@
             <div class="loader"></div>            
         </div>
     </div>
-    <div class="info_wrapper">
-
+    <div class="info_wrapper modal_show" id="modal-info">
+        <div class="info_box">
+            <div class="info_body" id="info-body">
+                    <div class="content_tworow_wrapper">
+                            <div class="tworow_item tworow_img" style="background-image: url(/img/info-nennga2022.webp); flex-grow: 4;background-size: contain;height: 20rem;">
+                            </div>
+                            <div class="tworow_item tworow_item_center">
+                                <div class="para_with_icon color_blue">
+                                    <div class="icon_mini">
+                                        <i class="fa-solid fa-tag fa-2xs"></i>
+                                    </div>
+                                    <p class="jp-heavy">年賀状2022</p>
+                                </div>
+                                <div class="para_with_icon">
+                                    <div class="icon_mini">
+                                    <i class="fa-solid fa-calendar-days fa-2xs"></i>
+                                    </div>
+                                    <p class="jp-bold">高３の冬</p>
+                                </div>
+                                <div class="para_with_icon">
+                                    <div class="icon_mini">
+                                    <i class="fa-solid fa-angles-right fa-2xs"></i>
+                                    </div>
+                                    <p class="jp-bold">年賀状として作成</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                    
+                    <div class="content_box">
+                        <p class="content_normal jp-regular">2022年用の年賀状です。</p>
+                        <p class="content_normal jp-regular">テーマは「受験でバタンキュー」で、ゴール目前で倒れるイメージをPhotoshopなどで加工して作成しました。           
+                        </p>
+                    </div>
+            </div>
+            <div class="info_close" id="info-close" onclick=>
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+        </div>
     </div>
-    <nav>
-
+    <nav class="navigation_wrapper">
+            <div class="navigation">
+                <a href="#top">
+                <i class="fa-solid fa-house fa-xs"></i>
+            </a>
+            <a href="#intro">
+            <i class="fa-solid fa-user fa-xs"></i>
+            </a>
+            <a href="#hobby">
+            <i class="fa-solid fa-heart fa-xs"></i>
+        </a>
+        <a href="#works">
+            <i class="fa-solid fa-screwdriver-wrench fa-xs"></i>
+        </a>
+        </div>
     </nav>
-    <header>
+    <header id="top">
+        <div class="header_box">
+            <div class="color_blue">
+                <h1 class="jp-heavy">しみはす</h1>
+                <h2 class="en-heavy">Portfolio</h2>
+            </div>
+        </div>
         <div class="slideshow_wrapper">
             <div class="slideshow_overlay"></div>
-            <div id="slideshow"></div>
+            <div class="slideshow" id="slideshow"></div>
         </div>
-        <div class="header_curtain"></div>
+        <!-- <div class="header_curtain"></div> -->
     </header>
     <div class="contents_wrapper">
-    <section class="content_section">
+
+    <section class="content_section" id="intro">
         <div class="content_box">
         <div class="content_tworow_wrapper">
-                <div class="tworow_item tworow_img">
+                <div class="tworow_item tworow_img" style="background-image: url(/img/face_intro.webp);">
                     <div class="heading_with_icon heading_back_w" id="sec2Heading">
                         <i class="fa-solid fa-user fa-xs"></i>
-                        <h2 class="en-heavy">Introduction</h2>
+                        <h2 class="en-heavy">Howdy!</h2>
                     </div>
                 </div>
                 <div class="tworow_item tworow_item_center">
                     <div class="para_with_icon color_blue">
-                        <i class="fa-solid fa-signature fa-2xs"></i>
+                        <div class="icon_mini">
+                            <i class="fa-solid fa-user-tag fa-2xs"></i>
+                        </div>
                         <p class="jp-heavy">しみはす</p>
                     </div>
                     <div class="para_with_icon">
-                        <i class="fa-solid fa-signature fa-2xs"></i>
-                        <p class="jp-normal">清水大輔</p>
+                        <div class="icon_mini">
+                            <i class="fa-solid fa-signature fa-2xs"></i>
+                        </div>
+                        <p class="jp-bold">清水大輔</p>
                     </div>
                     <div class="para_with_icon">
+                        <div class="icon_mini">
+                        <i class="fa-solid fa-cake-candles fa-2xs"></i>
+                        </div>
+                        <p class="jp-bold">2003/08/22</p>
+                    </div>
+                    <div class="para_with_icon">
+                        <div class="icon_mini">
+                        <i class="fa-solid fa-location-dot fa-2xs"></i>
+                        </div>
+                        <p class="jp-bold">東京（生まれは大阪）</p>
+                    </div>
+                    <div class="para_with_icon">
+                        <div class="icon_mini">
                         <i class="fa-solid fa-school fa-2xs"></i>
-                        <p class="jp-normal">東京都立大学</p>
+                        </div>
+                        <p class="jp-bold">東京都立大学</p>
                     </div>
                     <div class="para_with_icon">
+                        <div class="icon_mini">
                         <i class="fa-solid fa-graduation-cap fa-2xs"></i>
-                        <p class="jp-normal">システムデザイン学部<br>情報科学科</p>
+                        </div>
+                        <p class="jp-bold">システムデザイン学部<br>情報科学科 B3</p>
                     </div>
                 </div>
             </div>
         </div>
+
+        
+        <div class="content_box">
+            <p class="content_normal jp-regular">はじめまして！<b>しみはす</b>こと清水大輔です！<br><b>「初期装備Yシャツの天パ」</b>と覚えていただければ嬉しいです<br>関西育ちではありませんが、関西弁もどきを話すことが多いです</p>
+            <p class="content_normal jp-regular">２歳の頃、親からおさがりのパソコンを支給されて以来、パソコンで色々してきました。<br>
+                その中で高１でWebDキャンプに参加してから、Web制作もやるようになりました。<br>            
+            </p>
+            <p class="content_normal jp-regular">
+                直近でWeb制作をやったこともあって、今Webの知識が一番フレッシュな状態です！何かあれば、DMなどで聞いてください！その他のことも大歓迎！
+            </p>
+        </div>
+        
     </section>
-    <section class="content_section">
+    <section class="content_section" id="hobby">
         <div class="content_box">
             <div class="content_wrapper">
                 <div class="heading_with_icon color_red">
@@ -84,77 +174,79 @@
             </div>
               <div class="card_array">
                 <div class="card_item">
-                  <div class="card_bgimg" style="background-image: url(img/IMG_1888.png);"></div>
+                  <div class="card_bgimg" style="background-image: url(img/diy_card.webp);"></div>
                   <div class="card_heading">
                     <h3>DIY</h3>
                   </div>
-                  <p class="card_desc">基本的にものづくりが大好きです！<br></p>
+                  <p class="card_desc">基本的にものづくりが大好きです！作れそうなものをよく作ってます<br>丸椅子の足置きを作ったりしました</p>
                 </div>
                 <div class="card_item">
-                  <div class="card_bgimg" style="background-image: url(img/IMG_1888.png);"></div>
+                  <div class="card_bgimg" style="background-image: url(img/prog_card.webp);"></div>
                   <div class="card_heading">
-                    <h3>電子工作</h3>
+                    <h3>プログラミング</h3>
                   </div>
-                  <p class="card_desc">カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文</p>
+                  <p class="card_desc">Webを含め、いろいろ開発するのが好きです！<br>ArduinoとかでPC用にクラッチペダルとかを作ったりしてます</p>
                 </div>
                 <div class="card_item">
-                  <div class="card_bgimg" style="background-image: url(img/IMG_1888.png);"></div>
+                  <div class="card_bgimg" style="background-image: url(img/gad_card.webp);"></div>
                   <div class="card_heading color_red_bg">
-                    <h3>機材集め</h3>
+                    <h3>ガジェット集め</h3>
                   </div>
-                  <p class="card_desc">カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文</p>
+                  <p class="card_desc">機材が大好きです！<br>最近は一眼用の単焦点レンズを狙ってます</p>
                 </div>
                 <div class="card_item">
-                  <div class="card_bgimg" style="background-image: url(img/IMG_1888.png);"></div>
+                  <div class="card_bgimg" style="background-image: url(img/face_intro.webp);"></div>
                   <div class="card_heading color_red_bg">
                     <h3>年賀状作り</h3>
                   </div>
-                  <p class="card_desc">カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文</p>
+                  <p class="card_desc">ここ５年ほど続けてる趣味です<br>作品は次のセクションで見られます！</p>
                 </div>     
                 <div class="card_item">
-                    <div class="card_bgimg" style="background-image: url(img/IMG_1888.png);"></div>
+                    <div class="card_bgimg" style="background-image: url(img/car_card.webp);"></div>
                     <div class="card_heading color_gray_bg">
                       <h3>ドライブ</h3>
                     </div>
-                    <p class="card_desc">カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文</p>
+                    <p class="card_desc">ミッション動かすのが楽しくてMT車にちょこちょこ乗ってます<br>パソコンでシミュレータで遊ぶのもよくやります</p>
                   </div>  
                   <div class="card_item">
-                    <div class="card_bgimg" style="background-image: url(img/IMG_1888.png);"></div>
+                    <div class="card_bgimg" style="background-image: url(img/fes_card.webp);"></div>
                     <div class="card_heading color_gray_bg">
-                      <h3>VR</h3>
+                      <h3>フェス</h3>
                     </div>
-                    <p class="card_desc">カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文カード説明文</p>
+                    <p class="card_desc">友人に誘われてから行くようになりました<br>機材がいっぱい見られて楽しい！</p>
                   </div>    
               </div>
         </div>
     </section>
-  <section class="content_section">
+</div>
+<div class="contents_wrapper bg_dotted">
+  <section class="content_section" id="works">
     <div class="content_box">
         <div class="content_wrapper">
-          <div class="heading_with_icon fa-xs">
-            <i class="fa-solid fa-screwdriver-wrench"></i>
-            <h2 class="en-heavy">Works</h2>
+          <div class="heading_with_icon">
+            <i class="fa-solid fa-screwdriver-wrench fa-xs"></i>
+            <h2 class="en-heavy">Works & Job</h2>
           </div>
         </div>
         <div class="content_modal_select">
           <div class="modal_select_wrapper">
-            <div class="modal_select_item_bg">
+            <div class="modal_select_item_bg" onclick="showModal('info1')" style="background-image: url(/img/info-qr.webp);">
                 <div class="modal_select_item">
-                    <p>Work Name</p>
+                    <p>QRスタンプラリー</p>
                 </div>
             </div>
-            <div class="modal_select_item_bg">
+            <div class="modal_select_item_bg" onclick="showModal('info2')" style="background-image: url(/img/face_intro.webp);">
                 <div class="modal_select_item">
-                    <p>Work Name</p>
+                    <p>年賀状2022</p>
                 </div>
             </div>
-            <div class="modal_select_item_bg">
+            <div class="modal_select_item_bg" onclick="showModal('info1')" style="background-image: url(/img/info-qr.webp);">
                 <div class="modal_select_item">
                     <p>Work Name</p>
                 </div>
             </div>
           </div>
-          <div class="modal_select_wrapper">
+          <div class="modal_select_wrapper" onclick="showModal('info1')" style="background-image: url(/img/info-qr.webp);">
             <div class="modal_select_item_bg">
                 <div class="modal_select_item">
                     <p>Work Name</p>
