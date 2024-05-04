@@ -78,7 +78,7 @@ h2,h3,h4{
     font-style: normal;
     font-size: 0.8rem;
 }
-p,span{
+p,span,a{
     font-family: toppan-bunkyu-gothic-pr6n, serif;
     font-weight: 400;
     font-style: normal;
@@ -165,6 +165,8 @@ header{
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
+   justify-content: center;
+
 }
 .content_normal{
     padding: 1rem;
@@ -177,6 +179,9 @@ header{
 .content_wrapper{
     padding: 0.5rem 1rem;
 
+}
+.height_full{
+   min-height: 100vh;
 }
 .content_tworow_wrapper{
     display: flex;
@@ -318,7 +323,7 @@ header{
 }
 .modal_select_item{
     cursor: pointer;
-    height:5rem;
+    height:7rem;
     display: inline;
     transition: all 0.3s ease-in-out;
     background-color: rgba(0,0,0,0.0);
@@ -352,7 +357,7 @@ header{
 }
 
 .info_box{
-    width: 90%;
+    width: 1080px;
     height: 90%;
     position: relative;
     background-color: var(--color-white);
@@ -387,6 +392,7 @@ footer{
     background-color: var(--color-blue);
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 footer p{
     color: var(--color-white) !important;
@@ -465,6 +471,9 @@ footer p{
 @media screen and (max-width:1200px){
     .content_box{
         width: 90vw;
+    }
+    .info_box{
+        width: 90%;
     }
 }
 @media screen and (max-width:600px) {
