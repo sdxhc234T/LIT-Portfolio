@@ -47,8 +47,8 @@ function fadeoutElem(id) {
         if (document.readyState === "complete") {
             fadeoutElem("modal-loader")
         } else {
-            setInterval(f, 500);
+            setTimeout(f, 500);
         }
     }
-    setInterval(f, 1000);
+    setTimeout(f, 1000);
 })()
