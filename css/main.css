@@ -87,8 +87,33 @@ html{
     width: 100%;
 }
 header{
-    height: 100vh;
+    position: relative;
+    height: 110vh;
     width: 100%;
+}
+.slideshow_overlay{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #008DBD;
+}
+.slideshow_wrapper{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -10;
+}
+.header_curtain{
+    position: absolute;
+    bottom: 0;
+    height: 20vh;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 20%, rgba(255,255,255,0) 100%);
+}
+.contents_wrapper{
+    background-color: #fff;
 }
 .content_section{
     width: 100%;
