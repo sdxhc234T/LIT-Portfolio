@@ -240,10 +240,7 @@ const info = {
 
 <div class="content_box">
     <p class="content_normal jp-regular">
-        出身中高でいろいろ教えてます。プログラミングを押したりする場面も時々あります。
-    </p>
-    <p class="content_normal jp-regular">
-        この仕事がLife is Tech!に応募しようと思ったきっかけでもあります。
+        出身中高でいろいろ教えてます。プログラミングを教えたりする場面も時々あります。
     </p>
 </div>`
     }
